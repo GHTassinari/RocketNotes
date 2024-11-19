@@ -6,10 +6,10 @@ export function Header(){
   return(
     <Container>
       <Profile>
-        <img src="https:/github.com/GHTassinari.png" alt="Foto do usuário"></img>
+        <img src="https:/github.com/GHTassinari.png" alt="Users Photo"></img>
 
         <div>
-          <span>Bem-vindo</span>
+          <span>Welcome</span>
           <strong>Guilherme Henrique Tassinari</strong>
         </div>
       </Profile>
