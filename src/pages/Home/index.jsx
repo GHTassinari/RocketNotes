@@ -14,7 +14,7 @@ export function Home() {
 
       <Menu>
         <li>
-          <ButtonText title="All" isActive />
+          <ButtonText title="All" isactive />
         </li>
         <li>
           <ButtonText title="Reactjs" />
