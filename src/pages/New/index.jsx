@@ -1,31 +1,42 @@
-import { Header } from '../../components/Header';
-import { Input } from '../../components/Input';
-import { Textarea } from '../../components/Textarea';
-import { NoteItem } from '../../components/NoteItem';
-import { Section } from '../../components/Section'
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
+import { Textarea } from "../../components/Textarea";
+import { NoteItem } from "../../components/NoteItem";
+import { Section } from "../../components/Section";
+import { Button } from "../../components/Button";
 
-import { Container, Form } from './styles';
+import { Container, Form } from "./styles";
 
-export function New(){
-    return(
+export function New() {
+  return (
     <Container>
-        <Header />
+      <Header />
 
-        <main>
-            <Form>
-                <header>
-                    <h1>Create note</h1>
-                    <a href="/">Return</a>
-                </header>
+      <main>
+        <Form>
+          <header>
+            <h1>Create note</h1>
+            <a href="/">Return</a>
+          </header>
 
-                <Input placeholder="Title"/>
-                <Textarea placeholder="Observations"/>
+          <Input placeholder="Title" />
+          <Textarea placeholder="Observations" />
 
-                <Section title="Useful links"/>
-                <NoteItem value="https://rocketseat.com.br"/>
-                <NoteItem isnew="true" placeholder="New Link"/>
-            </Form>
-        </main>
+          <Section title="Useful links">
+            <NoteItem value="https://rocketseat.com.br" />
+            <NoteItem isnew="true" placeholder="New Link" />
+          </Section>
+
+          <Section title="Markers">
+            <div className="tags">
+              <NoteItem value="React" />
+              <NoteItem isnew="true" placeholder="Tag" />
+            </div>
+          </Section>
+
+          <Button title="Save note"/>
+        </Form>
+      </main>
     </Container>
-    );
+  );
 }
